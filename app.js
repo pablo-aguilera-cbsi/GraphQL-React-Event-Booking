@@ -7,10 +7,36 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// get a simple message in the browser with node-express server
-app.get('/', (req, res, next) => {
-  res.send('Hellow World!!');
-})
+app.use(
+  "/graphql",
+  graphqlHTTP({
+    schema: buildSchema(`
+      type RootQuery {
+          events: [String!]!
+      }
+
+      type RootMutation {
+          createEvent (name: String): String
+      }
+
+      schema {
+          query: RootQuery
+          mutation: RootMutation
+      }
+    `),
+
+    rootValue: {
+      events: () => {
+        return ['Romantic Cooking', 'Sailing', 'All Night Coding'];
+      },
+      createEvent: (arg) => {
+        const eventName = arg.name
+        return eventName;
+      },
+    },
+    graphiql: true,
+  })
+);
 
 app.listen(3000);
 

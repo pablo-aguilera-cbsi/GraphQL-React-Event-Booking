@@ -1,4 +1,7 @@
 --------------------------------
+10142021
+//Commit 2: Schemas & Resolvers
+--------------------------------
 10132021
 //Commit 1: API Design...Initial commit
 -- npm install BEFORE ALL
