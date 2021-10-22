@@ -1,4 +1,32 @@
 --------------------------------
+10182021
+//Commit 3: Creando Types & Data
+
+** mockData for graphiQL:
+
+query {
+  events {
+    title
+    description
+    price
+    date
+  }
+}
+
+mutation {
+  createEvent(eventInput: {
+    title: "A Test",
+    description: "Does this work?",
+    price: 9.99,
+    date: "2021-10-18T18:50:52.815Z",
+  }) {
+    title
+    description
+    price
+    date
+  }
+}
+--------------------------------
 10142021
 //Commit 2: Schemas & Resolvers
 --------------------------------
