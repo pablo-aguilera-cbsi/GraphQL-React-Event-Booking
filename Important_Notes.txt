@@ -1,5 +1,14 @@
 --------------------------------
 10182021
+//Commit 4: MongoDB
+- Create Sesion, cluster, user & network at mongodb.com
+- Install mongoose dep through npm
+- Create nodemon.json file for mongoDB darabase credentials
+- Create mongoDB connection with a promise
+- Create models folder and entity file (event.js)
+- Code implementd in app.js to save and retrieve the data to/from mongoDB
+--------------------------------
+10182021
 //Commit 3: Creando Types & Data
 
 ** mockData for graphiQL:
