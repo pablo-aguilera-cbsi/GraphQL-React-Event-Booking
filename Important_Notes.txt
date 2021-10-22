@@ -1,3 +1,8 @@
+--------------------------------
+10132021
+//Commit 1: API Design...Initial commit
+-- npm install BEFORE ALL
+--------------------------------
 10222021
 //Initial Commit to GitHub Repository reference: 
 https://github.com/Kmilo2020/GraphQL-React-Events-Booking
